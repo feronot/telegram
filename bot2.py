@@ -47,8 +47,8 @@ def func_handler(command, function) -> None:
     updater.dispatcher.add_handler(start_command)
 
 
-func_handler("pestoon", start_handler)
-func_handler("pestoon2", start_handler2)
+func_handler("start", start_handler)
+func_handler("start2", start_handler2)
 
 updater.start_polling()
 updater.idle()
