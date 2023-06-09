@@ -17,7 +17,7 @@ TOKEN = os.getenv("TOKEN")
 updater = Updater(TOKEN)
 
 
-def start_handler(update: Update, context: CallbackContext) -> int:
+def start_handler(update: Update, context: CallbackContext) -> None:
     # with open('fetch2.txt') as f:
     #     for line in f:
     #         reply_text1 = line
@@ -37,7 +37,7 @@ def start_handler2(update: Update, context: CallbackContext) -> None:
     msg_handler('Shootool Bomboli')
 
 
-def msg_handler(message) -> int:
+def msg_handler(message) -> None:
     reply_text = 'https://api.telegram.org/bot' + TOKEN + '/sendMessage?chat_id=-1001755597531&text=' + message
     requests.post(reply_text)
 
