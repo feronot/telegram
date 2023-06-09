@@ -28,7 +28,8 @@ from telegram.ext import (
 )
 import os
 
-TOKEN = os.getenv("TOKEN")
+# TOKEN = os.getenv("TOKEN")
+TOKEN = "5061949513:AAFhWoDrY8I_1vp43hUyhWbJVRRsaasD9Sc"
 # Enable logging
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
