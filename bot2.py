@@ -13,7 +13,7 @@ import time
 import requests
 from random import randrange
 
-TOKEN = "5061949513:AAFhWoDrY8I_1vp43hUyhWbJVRRsaasD9Sc"
+TOKEN = os.getenv("TOKEN")
 updater = Updater(TOKEN)
 
 
